@@ -16,7 +16,7 @@
 /*This is the CSS way to have an image as a background*/
 
  body {
-  background: url("/assets/bg.jpg") no-repeat;
+  background: url("bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -27,10 +27,14 @@
 /*}*/
 
 .container {
-  background: rgba(255,255,255,0.8);
+  background:rgba(255,255,255,.8);
 }
 
 .navbar-default .navbar-brand {
   font-family: 'Marck Script', cursive;
-  color: #000;
+  color: #e51c1c;
 }
+
+ body {
+    background: <%= @color %>;
+  }

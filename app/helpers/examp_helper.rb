@@ -1,0 +1,2 @@
+module ExampHelper
+end

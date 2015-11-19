@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+
+  resources :destinations
+  resources :mice
+
   get 'welcome/index'
-  
+
+  get 'mice/contact'
+
   get 'contact' => 'welcome#contact'
-  
+
   get 'about' => 'welcome#about'
 
   root 'welcome#index'

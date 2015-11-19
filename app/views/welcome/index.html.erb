@@ -1,8 +1,7 @@
+
 <h1>Welcome to my Travel Site</h1>
 <p>This is my very awesome travel site.</p>
     <%= @homeland %>
-
-
 <ul>
   <% @countries.each do |country| %>
     <li><%= country %></li>
@@ -17,16 +16,16 @@
 <table class="table">
   <tr>
     <% @united_states.each do |key,value| %>
-	  <th><%= key.titleize %></th>
+    <th><%= key.titleize %></th>
     <% end %>
   </tr>
   <tr>
-    <% @united_states.each do |key,value| %>      
+    <% @united_states.each do |key,value| %>
       <% if value.kind_of?(Array) %>
           <td><%= value.join(", ") %></td>
       <% else %>
          <td><%= value %></td>
-      <% end %> 
+      <% end %>
     <% end %>
   </tr>
 </table>
